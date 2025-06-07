@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+}
+html,body{
+    height : 100%;
+    overflow : visible;
+}
+        /*Debut du code Du Menu */
+body{
+    height:auto;   /*barre de scroll */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-menu{  /* container du menu */
+    display :flex;
+    margin-left: auto;    /* met le menu au milieu */
+    margin-right: auto;     /* met le menu au milieu */
+    gap : 30px;
+}
+
+.menu{
+    position: sticky; /*colle le menu a la page web directement en l'integrant et peut importe ou l'on scroll cela va suivre*/
+    top:0;
+    left:0;
+    background-color: rgb(75, 92, 107);
+    display : flex;
+    padding : 0;
+    align-items: center;
+    height : 50px; /* taille fixe de la barre du menu */
+    z-index: 1000;/* ne suffit pas a regler le bug du menu */
+}
+
+    /*Logo*/
+/* Logo  Instagram , Twitter et Youtube */
+
+.logo-container{         /* Container flex pour les logo*/
+    display: flex;
+    align-items: center;
+    padding:0;
+    margin : 0;
+
+}
+
+.logo{  
+    width: 27px;
+    height: auto;
+} 
+
+/* Logo Capgemini */
+
+.container-logocapgemini{
+    display: flex;
+    padding : 0;
+}
+
+.logo_capgemini{
+    width: 35px;
+    height: auto;
+
+}
+
+
+/*Fin logo*/
+
+.menu > ul{
+    display: flex;
+    list-style: none; /* retire les puces */
+}
+
+.menu li{
+    align-items: center;
+    padding : 0;
+  
+}
+
+.menu li a{
+    text-decoration: none; /* retire le souligner du texte */
+    color : white;
+    display : block;
+    padding : 10px 15px;
+    margin : 0;
+}
+
+.has-sousmenu{
+    position : relative;
+}
+
+
+
+
+
+
+.sous-menu{
+    list-style : none;
+    position : absolute;
+    top : 100%;  /* place le sous menu juste en dessous */
+    left : 0;
+    background-color: rgb(84, 97, 107);
+    padding: 0;
+    margin : 0;
+    transform: translateY(-50px);                               /*plus la valeur est elever plus le sous menu va descendre de "haut" */
+    opacity : 0;                                                /* le sous menu n'est pas visible de base*/
+    transition: transform 0.3s ease, opacity 0.4s ease;          /* le sous  menu va mettre 0.3 s a descendre et 0.4s a avoir une opacité de 1*/
+    visibility: hidden;
+
+
+
+}
+
+.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000000;
+    transition: 0.3s ease, color 0.3s ease;
+
+}
+
+
+.has-sousmenu:hover .sous-menu{
+    transform: translateY(0); /*le sous menu descend donc a 0*/
+    opacity : 1;
+    visibility: visible;
+}
+
+
+
+.container-logocapgemini{
+    display: flex;
+    padding : 0;
+}
+
+.logo_capgemini{
+    width: 35px;
+    height: auto;
+
+}
+
+
+/*Fin logo*/
+
+.menu > ul{
+    display: flex;
+    list-style: none; /* retire les puces */
+}
+
+.menu li{
+    align-items: center;
+    padding : 0;
+  
+}
+
+.menu li a{
+    text-decoration: none; /* retire le souligner du texte */
+    color : white;
+    display : block;
+    padding : 10px 15px;
+    margin : 0;
+}
+
+.has-sousmenu{
+    position : relative;
+}
+
+
+
+
+
+
+.sous-menu{
+    list-style : none;
+    position : absolute;
+    top : 100%;  /* place le sous menu juste en dessous */
+    left : 0;
+    background-color: rgb(84, 97, 107);
+    padding: 0;
+    margin : 0;
+    transform: translateY(-50px);                               /*plus la valeur est elever plus le sous menu va descendre de "haut" */
+    opacity : 0;                                                /* le sous menu n'est pas visible de base*/
+    transition: transform 0.3s ease, opacity 0.4s ease;          /* le sous  menu va mettre 0.3 s a descendre et 0.4s a avoir une opacité de 1*/
+    visibility: hidden;
+
+}
+
+.menu li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000000;
+    transition: 0.3s ease, color 0.3s ease;
+
+}
+
+
+.has-sousmenu:hover .sous-menu{
+    transform: translateY(0); /*le sous menu descend donc a 0*/
+    opacity : 1;
+    visibility: visible;
+}
+
+
+        /* fin code menu*/
+
+@layer library, reset, base, demo;
+@import 'https://unpkg.com/open-props@2.0.0-beta.5' layer(library);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap');
+/*Organisation des couches CSS : bibliothèque, réinitialisation, base, démonstration*/  /*Importation de la bibliothèque Open Props avec des variables CSS prédéfinies*/ /*Importation de la police*/ 
+h2{
+  font-size: 50px;
+}
+@layer reset {
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* Inclut les bordures et les marges dans la taille totale des éléments */
+}
+
+:where(:not(dialog)) {
+  margin: 0;   /* Réinitialise les marges par défaut sauf pour les dialogues */
+}
+}
+
+@layer base {
+html {
+  --brand-gradient: linear-gradient(227deg,
+      #1400c7 0%,
+      #00bbff 100%); /* Définition d'un dégradé pour la marque */
+
+}
+
+}
+
+@layer demo {
+
+
+.nav-cta-btn {
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-7);
+  inline-size: max-content;
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+  text-decoration: none;
+  padding-block: var(--size-3);
+  padding-inline: var(--size-7);
+  border: var(--border-size-2) solid transparent;
+  color: black;
+  position: relative;
+  isolation: isolate;
+
+  background: linear-gradient(white, white) padding-box,
+    var(--brand-gradient) border-box;
+  border-radius: var(--radius-6);/* Coins arrondis */
+  overflow: hidden;
+
+
+}
+
+.section {
+  --section-block-size: max(400px, 100dvb);
+  display: grid;
+  background-color: white;
+  min-block-size: var(--section-block-size);
+  position: relative;
+  block-size: 100%;
+  display: grid;
+
+  >* {
+    grid-area: 1/1;
+  }
+}
+
+.section-wrapper {
+  position: relative;
+  display: grid;
+
+  @media (width >=960px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+
+.video {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover; /* Adapte la vidéo au conteneur */
+  position: relative;
+  z-index: -1;
+}
+
+.content-wrapper {
+  display: grid;
+
+
+}
+
+.meta {
+  display: grid;
+  gap: var(--size-3);
+}
+
+.content {
+  display: grid;
+  inline-size: 100%;
+  place-items: center;
+  padding-block: var(--size-7);
+  padding-inline: var(--size-5);
+
+  @media (width >=960px) {
+    padding: var(--size-10);
+    min-block-size: 100cqb;
+    place-items: center end;
+  }
+
+
+}
+
+.mobile-visual {
+  inline-size: 100%;
+  aspect-ratio: var(--ratio-square);/* Maintient un ratio carré */
+
+  @media (width >=960px) {
+    display: none; /* Masque les visuels mobiles sur les grands écrans */
+  }
+}
+
+.headline {
+  font-size: var(--font-size-7);
+  font-weight: var(--font-weight-4);
+  max-inline-size: var(--size-content-1);
+  text-wrap: pretty;
+
+}
+
+.desc {
+  font-size: var(--font-size-4);
+  line-height: 1.5; /* Espacement entre les lignes */
+  max-inline-size: 40ch;
+  text-wrap: pretty;
+
+}
+
+.visual {
+  display: grid;
+  position: sticky;
+  block-size: var(--section-block-size);
+  inset-block-start: 0;
+  container-type: size;
+
+  @media (width < 960px) {
+    display: none;
+  }
+}
+
+.video-visual {
+  inline-size: 100%;
+  block-size: var(--section-block-size);
+  display: block;
+  position: sticky;
+  inset-block-start: 0;
+  isolation: isolate;
+  filter: hue-rotate(210deg);
+}
+
+.icone-wrapper {
+  container-type: size;
+  display: grid;
+  place-items: center;
+  overflow: clip;
+
+  >* {
+    grid-area: 1/1;
+  }
+}
+
+.icone {
+  aspect-ratio: var(--ratio-square);
+  inline-size: 70cqi;
+  border-radius: var(--radius-3);
+  scale: 0.4;/* Réduit l'échelle */
+}
+
+.icone-img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.icone-1 {
+  scale: 1;
+}
+
+.icone-2 {
+  translate: -35cqi 30cqb;
+  opacity: 0.3;
+}
+
+.icone-3 {
+  translate: 0cqi 50cqb;
+  opacity: 0.5;
+}
+
+.icone-4 {
+  translate: 45cqi 40cqb;
+  opacity: 0.5;
+}
+
+.content-1 {
+  --_text-gradient: linear-gradient(227deg,
+      #1400c7 0%,
+      #00bbff 100%);
+}
+
+.content-2 {
+  --_text-gradient: linear-gradient(227deg,
+      #28dc28 0%,
+      #00bbff 100%);
+}
+
+.content-3 {
+  --_text-gradient: linear-gradient(227deg,
+      #1400c7 0%,
+      #b800b1 100%);
+}
+
+.content-4 {
+  --_text-gradient: linear-gradient(227deg,
+      #b800b1 0%,
+      #f50000 100%);
+}
+
+.text-highlight {
+  background: var(--_text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+}
+
+@supports (animation-timeline: scroll()) {
+body {
+  timeline-scope: --content-1, --content-2, --content-3, --content-4;
+}
+
+.section {
+  view-timeline-name: --section;
+}
+
+.content-1 {
+  view-timeline-name: --content-1;
+}
+
+.content-2 {
+  view-timeline-name: --content-2;
+}
+
+.content-3 {
+  view-timeline-name: --content-3;
+}
+
+.content-4 {
+  view-timeline-name: --content-4;
+}
+
+.icone {
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.icone-1 {
+  animation-timeline: --content-1;
+  animation-name: slide-up-first-card;
+}
+
+.icone-2 {
+  animation-timeline: --content-2;
+  animation-name: slide-up-card;
+}
+
+.icone-3 {
+  animation-timeline: --content-3;
+  animation-name: slide-up-card;
+}
+
+.icone-4 {
+  animation-timeline: --content-4;
+  animation-name: slide-up-card;
+}
+
+.video-visual {
+  animation-timeline: --section;
+  animation-range-end: exit 110%;
+  animation-name: update-hue;
+  animation-timing-function: step-end;
+  animation-fill-mode: forwards;
+}
+}
+/*Définition des animations*/
+@keyframes update-hue {
+  0% {
+    filter: hue-rotate(210deg);
+  }
+
+  25% {
+    filter: hue-rotate(150deg);
+  }
+
+  45% {
+    filter: hue-rotate(300deg);
+  }
+
+  60% {
+    filter: hue-rotate(4deg);
+  }
+}
+
+@keyframes slide-up-first-card {
+  50% {
+    translate: 0;
+    opacity: 1;
+  }
+
+  90% {
+    translate: 0 -50cqi;
+    scale: 0.6;
+  }
+
+  100% {
+    translate: 0 -100cqi;
+    opacity: 0;
+  }
+}
+
+@keyframes slide-up-card {
+  50% {
+    opacity: 1;
+    translate: 0;
+    scale: 1;
+  }
+
+  90% {
+    opacity: 0.5;
+    scale: 0.6;
+    translate: 0 -50cqb;
+  }
+
+  100% {
+    translate: 0 -100cqi;
+    opacity: 0;
+  }
+}
+
+/*Code footer*/
+
+
+
+footer {
+    position: relative;
+    background: #05b3a4;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+  
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.imgur.com/ZAts69f.png");
+    background-size: 1000px 100px;
+}
+  
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+}
+  
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+  
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+  
+@keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+}
+  
+@keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+}
+
+/* fin code footer */

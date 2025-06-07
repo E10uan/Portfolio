@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Capgemini - Accueil </title>
+        <link rel="stylesheet" type="text/css" href="pageacceuilstyle.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"> <!-- lien cdn qui permet de charger les fichiers de la bibliotheque slide -->
+        <link rel="icon" type="image/png" href="logo_Capemini.png">
+    </head>
+
+    <body>
+
+        <nav class="menu">
+
+          <ul class = "container-logocapgemini">
+            <li><a href="pageacceuil.html" target="_self"><img src="logo_Capemini.png" title="Revenir à l'Accueil" class="logo_capgemini"/></a></li>
+          </ul>
+          <ul class="container-menu">
+            <li class="has-sousmenu">
+              <a href="secteurs.html">Secteurs d'Activités</a>
+              <ul class="sous-menu">
+                <li><a href="secteurs.html">Ferroviare et transport</a></li>
+                <li><a href="secteurs.html#Energies">Energies et Utilites</a></li>
+                <li><a href="secteurs.html#High-Tech">High Tech</a></li>
+                <li><a href="secteurs.html#Médias">Médias et Divertissement</a></li>
+              </ul>
+            </li>
+
+            <li class ="has-sousmenu">
+              <a href="services.html">Services</a>
+              <ul class="sous-menu">
+                <li><a href="services.html">Cybersecurite</a></li>
+                <li><a href="services.html#devdurable">Développement Durable</a></li>
+                <li><a href="services.html#Cloud">Cloud</a></li>
+                <li><a href="services.html#Data">Data</a></li>
+              </ul>
+            </li>
+
+            <li class ="has-sousmenu">
+              <a href="Agence.html">Agences</a>
+              <ul class="sous-menu">
+                <li><a href="Agence.html">Grenoble</a></li>
+                <li><a href="Agence.html#paris">Paris</a></li>
+                <li><a href="Agence.html#aix-en-provence">Aix-En-Provence</a></li>
+                <li><a href="Agence.html#bordeaux">Bordeaux</a></li>
+                <li><a href="Agence.html#lyon">Lyon</a></li>
+                <li><a href="Agence.html#toulouse">Toulouse</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="NousConnaitre.html">Nous Connaitre</a></li>
+            <li><a href="formulaire.html">En Recherche de Stage ?</a></li>
+          </ul>
+
+          <ul class = "logo-container">
+              <li> <a href="https://x.com/capgeminifrance?lang=fr"> <img src="logo_twitter.png" alt="Twitter logo" class="logo"></a></li>   
+              <li> <a href="https://www.instagram.com/capgeminifr/" > <img src="logo_instagram.png" alt="Instagram logo" class="logo"></a></li>
+              <li><a href="https://www.youtube.com/channel/UCTNTpfAX2StVgQMsg6AOMoA"> <img src="logo_youtube.png" class="logo"> </a></li>
+          </ul>
+
+        </nav>
+
+        <section class="titre">
+          <h1>CAPGEMINI</h1>
+          <p>Le futur commence aujourd'hui</p>  
+        </section>
+        
+        <section class="box-info">
+          <article class="infos">
+            <p>Capgemini est une entreprise de services du numérique (ESN) <br> créée par Serge Kampf en 1967 à Grenoble, sous le nom de Sogeti.</p>
+          </article>
+          <a href="NousConnaitre.html" class = "button"> En Savoir Plus</a>
+
+        </section>
+
+        <section class = "services-container">
+          <article class = "item-cyber">
+            <h2>Cybersecurite</h2>
+            <a href="services.html" class = "button"> En Savoir Plus</a>
+          </article>
+
+          <article class = "item-data">
+            <h2>Data</h2>
+            <a href="services.html#Data" class = "button">En Savoir Plus</a>
+          </article>
+
+          <article class = "item-cloud">
+            <h2>Cloud</h2>
+            <a href="services.html#Cloud" class ="button">En Savoir Plus</a>
+          </article>
+
+          <article class = "item-dev_durable">
+            <h2>Developpement Durable</h2>
+            <a href="services.html#devdurable" class ="button" >En Savoir Plus</a>
+          </article>
+        </section>
+        
+        <section class="Carrousel">
+          <div class="entire-content">
+            <div class="content-carrousel">
+              <figure class="carrousel-image"><img src="Carousel-Grenoble.jpg"/> <a href="Agence.html" class = "button-agence">Grenoble</a>></figure>
+              <figure class="carrousel-image"><img src="Carousel-Paris.jpg"/> <a href="Agence.html#paris" class = "button-agence" >Paris</a></figure>
+              <figure class="carrousel-image"><img src="Carrousel-Aix-en-Provence.jpg"/> <a href="Agence.html#aix-en-provence" class = "button-agence" >Aix-En-Provence</a></button></figure>
+              <figure class="carrousel-image"><img src="Carrousel-Bordeaux.webp"/> <a href="Agence.html#bordeaux" class = "button-agence" >Bordeaux</a> </figure>
+              <figure class="carrousel-image"><img src="Carrousel-Lyon.jpg"/> <a href="Agence.html#lyon" class = "button-agence" >Lyon</a> </figure>
+              <figure class="carrousel-image"><img src="Carrousel-Toulouse.jpg"/> <a href="Agence.html#toulouse" class = "button-agence" >Toulouse</a> </figure>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="Newsletter-container">
+          <div class="Newsletter-image">
+            <img src="Newsletter.jpg" alt="Newsletter image">
+            <div class="Newsletter-contain">
+              <input type="email" placeholder="Entrez votre adresse email">
+              <button class="bouton-NewsLetter">Recevoir Notre Newsletter</button>
+              </div>
+          </div>
+          <a href="formulaire.html" class = "button-join" >Nous Rejoindre</a>
+        </section>
+        
+      </body>
+
+      <footer class="footer" >
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <p><b>© Capgemini, 2024. All rights reserved.</b></p>
+        <p>Information légales</p>
+        </ul>
+      </footer>
+
+
+
+      
+
+</html>
+    

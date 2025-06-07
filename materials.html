@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filtering</title>
+    <link rel="stylesheet" href="productstyle.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="product.js"></script>
+	<script src="app.js"></script>
+	
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Premade</a></li>
+            <li><a href="materials.html">Materials</a></li>
+            <li><a href="contactus.html">Contacts</a></li>
+            <div>
+                <li><a href="https://www.instagram.com/"><img src="Instagram_icon.png.webp" alt="logo instagram" id="instagram"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="Facebook_Logo_2023.png" alt="logo facebook" id="facebook"></a></li>
+            </div>
+        </ul>
+    </div>
+	<div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+  <div class="content">
+    <div class="tabbed">
+    <label for="" id="sort-by">Sort by:</label>
+    <input type="radio" name="tabs" id="tab-nav-1" checked>
+    <label for="tab-nav-1">Price</label>
+    <input type="radio" name="tabs" id="tab-nav-2">
+    <label for="tab-nav-2">Color</label>
+    <input type="radio" name="tabs" id="tab-nav-3">
+    <label for="tab-nav-3">Material</label>
+    <div class="tabs">
+      <div class="tab1" id="product-list">
+        <div class="product" data-price="45" data-name="Product A">
+        <img src="Tenders.jpg" alt="Product A">
+        <div>
+            Type : food <br>
+            Price: $10.99<br>
+            Color: beige <br>
+            Material: chicken<br>
+        </div>
+      </div>
+        <div class="product" data-price="45" data-name="Product A">
+        <img src="metal.jpg" alt="Product A">
+        <div>
+            Type: metal <br>
+            Price: $2.99<br>
+            Color: silver<br>
+            Material: steel<br>
+        </div>
+      </div>
+      <div class="product" data-price="45" data-name="Product A">
+        <img src="wheat.jpg" alt="Product A">
+        <div>
+            Type: plant <br>
+            Price: $0.1<br>
+            Color: yellow<br>
+            Material: wheat<br>
+        </div>
+      </div>
+      <div class="product" data-price="45" data-name="Product A">
+        <img src="garbage.jpg" alt="Product A">
+        <div>
+            Type : miscellaneous <br>
+            Price: $0.00<br>
+            Color: varying <br>
+            Material: garbage<br>
+        </div>
+      </div>
+    </div>
+    <div class="tab2" id="product-list">
+      <div class="product" data-price="45" data-name="Product A">
+        <img src="Tenders.jpg" alt="Product A">
+        <div>
+            Type : food <br>
+            Price: $10.99<br>
+            Color: beige <br>
+            Material: chicken<br>
+        </div>
+      </div>
+      <div class="product" data-price="45" data-name="Product A">
+        <img src="metal.jpg" alt="Product A">
+        <div>
+            type: metal <br>
+            Price: $2.99<br>
+            Color: silver<br>
+            Material: steel<br>
+        </div>
+      </div>
+      <div class="product" data-price="45" data-name="Product A">
+        <img src="garbage.jpg" alt="Product A">
+        <div>
+            Type : miscellaneous <br>
+            Price: $0.00<br>
+            Color: varying <br>
+            Material: garbage<br>
+        </div>
+      </div>
+      <div class="product" data-price="45" data-name="Product A">
+        <img src="wheat.jpg" alt="Product A">
+        <div>
+            type: plant <br>
+            Price: $0.1<br>
+            Color: yellow<br>
+            Material: wheat<br>
+        </div>
+      </div>
+    </div>
+    <div class="tab3" id="product-list">
+      <div class="product" data-price="45" data-name="Product A">
+        <img src="Tenders.jpg" alt="Product A">
+        <div>
+            Type : food <br>
+            Price: $10.99<br>
+            Color: beige <br>
+            Material: chicken<br>
+        </div>
+      </div>
+      <div class="product" data-price="45" data-name="Product A">
+        <img src="garbage.jpg" alt="Product A">
+        <div>
+            Type : miscellaneous <br>
+            Price: $0.00<br>
+            Color: varying <br>
+            Material: garbage<br>
+        </div>
+      </div>
+      <div class="product" data-price="45" data-name="Product A">
+        <img src="metal.jpg" alt="Product A">
+        <div>
+            type: metal <br>
+            Price: $2.99<br>
+            Color: silver<br>
+            Material: steel<br>
+        </div>
+      </div>
+      <div class="product" data-price="45" data-name="Product A">
+        <img src="wheat.jpg" alt="Product A">
+        <div>
+            type: plant <br>
+            Price: $0.1<br>
+            Color: yellow<br>
+            Material: wheat<br>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  </div>
+</body>
+</html>

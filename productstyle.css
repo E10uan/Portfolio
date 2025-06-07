@@ -1,0 +1,93 @@
+body {
+    
+}
+
+.content {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+#product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.product img  {
+    margin-right: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 1em;
+}
+
+::selection {
+  background-color: orange;
+}
+
+.tabbed {
+ width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.tabbed > input {
+  display: none;
+}
+
+.tabbed > label {
+  display: block;
+  float: left;
+  padding: 12px 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.tabbed > label:hover,
+.tabbed > input:checked + label {
+  background: orange;
+}
+
+.tabs {
+  clear: both;
+  perspective: 600px;
+  width: 100%;
+}
+
+.tabs > div {
+  width: 1300px;
+  position: absolute;
+  margin-right: 30px;
+  border: 2px solid orange;
+  padding: 10px 30px 40px;
+  line-height: 1.4em;
+  opacity: 0;
+  transform: rotateX(-20deg);
+  transform-origin: top center;
+  transition: opacity .3s, transform 1s;
+  z-index: 0;
+}
+
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4){
+  transform: rotateX(0);
+  opacity: 1;
+  z-index: 1;
+}
+
+
+
+#sort-by:hover {
+    background-color: white;
+}

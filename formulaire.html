@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Capgemini - Nous Rejoindre </title>
+        <link rel="stylesheet" type="text/css" href="formulairestyle.css">
+        <link rel="icon" type="image/png" href="logo_Capemini.png">
+    </head>
+
+    <body>
+
+        <nav class="menu">
+
+          <ul class = "container-logocapgemini">
+            <li><a href="pageacceuil.html" target="_self"><img src="logo_Capemini.png" title="Revenir à l'Accueil" class="logo_capgemini"/></a></li>
+          </ul>
+          <ul class="container-menu">
+            <li class="has-sousmenu">
+              <a href="secteurs.html">Secteurs d'Activités</a>
+              <ul class="sous-menu">
+                <li><a href="secteurs.html">Ferroviare et transport</a></li>
+                <li><a href="secteurs.html#Energies">Energies et Utilites</a></li>
+                <li><a href="secteurs.html#High-Tech">High Tech</a></li>
+                <li><a href="secteurs.html#Médias">Médias et Divertissement</a></li>
+              </ul>
+            </li>
+
+            <li class ="has-sousmenu">
+              <a href="services.html">Services</a>
+              <ul class="sous-menu">
+                <li><a href="services.html">Cybersecurite</a></li>
+                <li><a href="services.html#devdurable">Développement Durable</a></li>
+                <li><a href="services.html#Cloud">Cloud</a></li>
+                <li><a href="services.html#Data">Data</a></li>
+              </ul>
+            </li>
+
+            <li class ="has-sousmenu">
+              <a href="Agence.html">Agences</a>
+              <ul class="sous-menu">
+                <li><a href="Agence.html">Grenoble</a></li>
+                <li><a href="Agence.html#paris">Paris</a></li>
+                <li><a href="Agence.html#aix-en-provence">Aix-En-Provence</a></li>
+                <li><a href="Agence.html#bordeaux">Bordeaux</a></li>
+                <li><a href="Agence.html#lyon">Lyon</a></li>
+                <li><a href="Agence.html#toulouse">Toulouse</a></li>
+              </ul>
+            </li>
+            
+            <li><a href="NousConnaitre.html">Nous Connaitre</a></li>
+            <li><a href="formulaire.html">En Recherche de Stage ?</a></li>
+          </ul>
+
+          <ul class = "logo-container">
+              <li> <a href="https://x.com/capgeminifrance?lang=fr"> <img src="logo_twitter.png" alt="Twitter logo" class="logo"></a></li>   
+              <li> <a href="https://www.instagram.com/capgeminifr/" > <img src="logo_instagram.png" alt="Instagram logo" class="logo"></a></li>
+              <li><a href="https://www.youtube.com/channel/UCTNTpfAX2StVgQMsg6AOMoA"> <img src="logo_youtube.png" class="logo"> </a></li>
+          </ul>
+
+        </nav>
+      <article>
+        <img src="formulaire.png" alt="image formulaire">
+        <form action="traitement.php" target="_blank" method="post" enctype="multipart/form-data">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" required>
+    
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="prenom" required>
+
+          <br>
+          <label for="email">Adresse Mail</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="telephone">Numéro de Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" required>
+    
+          <label for="cv">Joindre un CV (PDF)</label>
+          <input type="file" id="cv" name="cv" accept=".pdf" required>
+    
+          <label for="lettre">Joindre une Lettre de Motivation (PDF)</label>
+          <input type="file" id="lettre" name="lettre" accept=".pdf" required>
+    
+          <button type="submit">ENVOYER</button>
+        </form>
+      </article>
+              </section>
+          </form>
+
+    </body>
+
+    <footer class="footer" >
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <p><b>© Capgemini, 2024. All rights reserved.</b></p>
+      <p>Information légales</p>
+      </ul>
+    </footer>
