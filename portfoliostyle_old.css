@@ -1,0 +1,15 @@
+/* Ancien fichier CSS sauvegardé */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 75px;
+}
+
+/* ... (reste du CSS existant) ... */

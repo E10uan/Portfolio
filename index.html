@@ -7,18 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@631&family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Portfolio - Elouan Chacornac</title>
 </head>
 <body>
-    <script src="competences.js"></script>
-</body>
     <section class="bandeau">
         <div class="bulle">
             <p>Mon&nbspPortFolio</p>
         </div>
         <div class="menu">
             <ul>
-                <li class="cases-menu"><a href="index.html">Informations Personelles</a></li>
+                <li class="cases-menu"><a href="#moi">Informations Personnelles</a></li>
                 <li class="cases-menu"><a href="#competences">Compétences</a></li>
                 <li class="cases-menu"><a href="#projets">Projets</a></li>
             </ul>
@@ -44,12 +43,63 @@
             </div>
         </article>
     </section>
-    <section class="propos">
+    <section class="propos" id="apropos">
         <div class="contenu-encadre">
-            <h2>A Propos de Moi</h2>
-            <div class="description-propos">
-                <p> Actuellement âgé de 19 ans (né le 10 Avril 2006), je suis un étudiant polyvalent en informatique, qui développe des compétences solides en programmation, gestion de données et administration système, tout en cultivant une passion durable pour l'histoire, la géographie et les cultures anciennes.</p>
-                <p> Mon parcours mêle rigueur technique, curiosité intellectuelle et autonomie. Et c’est non sans difficultés que je poursuis une double ambition : approfondir mes compétences en développement et continuer à me développer personnellement.</p>
+            <div class="propos-header">
+                <h2>À Propos de Moi</h2>
+                <div class="propos-illustration">
+                    <div class="code-icon"><i class="fas fa-code"></i></div>
+                    <div class="book-icon"><i class="fas fa-book"></i></div>
+                </div>
+            </div>
+            
+            <div class="propos-grid">
+                <div class="propos-card">
+                    <div class="propos-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Mon Parcours</h3>
+                    <p>Actuellement étudiant en 1ère année de BTS CIEL au lycée Charles Poncet à Cluses, je me forme activement aux métiers du numérique avec une approche à la fois technique et pratique.</p>
+                </div>
+                
+                <div class="propos-card">
+                    <div class="propos-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Compétences Techniques</h3>
+                    <ul class="competences-list">
+                        <li>Développement Web (HTML, CSS, JavaScript)</li>
+                        <li>Programmation (Python, Java)</li>
+                        <li>Gestion de versions (Git)</li>
+                        <li>Résolution de problèmes techniques</li>
+                    </ul>
+                </div>
+                
+                <div class="propos-card">
+                    <div class="propos-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Centres d'Intérêt</h3>
+                    <ul class="interets-list">
+                        <li>Histoire et géographie</li>
+                        <li>Cultures anciennes</li>
+                        <li>Nouvelles technologies</li>
+                        <li>Développement personnel</li>
+                    </ul>
+                </div>
+                
+                <div class="propos-card full-width">
+                    <div class="propos-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Ma Vision</h3>
+                    <p>Je m'efforce de concilier rigueur technique et curiosité intellectuelle pour développer des solutions innovantes. Mon objectif est de continuer à évoluer dans le domaine du développement tout en cultivant ma passion pour l'apprentissage continu et la découverte.</p>
+                </div>
+            </div>
+            
+            <div class="propos-cta">
+                <p>Vous souhaitez en savoir plus sur mon parcours ou discuter d'une opportunité ?</p>
+                <a href="#contact" class="btn-contact">Me contacter</a>
             </div>
         </div>
     </section>
@@ -165,9 +215,47 @@
                     <a href="https://informatique-lycee.forge.apps.education.fr/terminale_nsi/cours-terminale/pr2/" class="lien-projet" target="_blank">Voir le projet</a>
                 </div>
                 <div class="projet-item">
-                    <h3>Site Web "Guitool's"</h3>
-                    <p>Ce Site est issus d'un projet en Anglais, dans lequel un autre groupe nous a demandé de réaliser un site dans lequel on pourrait commander des guitares insolites et de créer des gutares entièrement personalisables. Et nous jouions le role de l'entreprise qui devait leur fournir le site web finalisé.</p>
-                    <a href="guitoolsindex.html" class="lien-projet" target="_blank">Voir le projet</a>
+                    <h3>Platformer 2D</h3>
+                    <div class="projet-description">
+                        <div class="projet-details">
+                            <h4>Description du projet</h4>
+                            <p>Un jeu de plateforme 2D développé en JavaScript, réalisé en autonomie au début de mon année de BTS. Ce projet m'a permis de développer mes compétences en programmation orientée objet et en gestion des interactions utilisateur.</p>
+                            
+                            <div class="projet-features">
+                                <h4>Fonctionnalités principales :</h4>
+                                <ul>
+                                    <li>Système de saut et déplacement fluide</li>
+                                    <li>Collecte d'objets et système de score</li>
+                                    <li>Gestion des collisions avancée</li>
+                                    <li>Animation des personnages et des éléments du jeu</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="projet-techno">
+                            <h4>Technologies utilisées :</h4>
+                            <div class="techno-tags">
+                                <span class="techno-tag">JavaScript</span>
+                                <span class="techno-tag">HTML5 Canvas</span>
+                                <span class="techno-tag">CSS3</span>
+                            </div>
+                            
+                            <div class="projet-actions">
+                                <a href="indexjeux.html" class="btn-jouer" target="_blank">
+                                    <span class="btn-icon">▶</span>
+                                    Jouer au jeu
+                                </a>
+                                <div class="code-links">
+                                    <a href="script.js" class="code-link" target="_blank" title="Voir le code source JavaScript">
+                                        <span class="code-icon">JS</span>
+                                    </a>
+                                    <a href="jeustyle.css" class="code-link" target="_blank" title="Voir les styles CSS">
+                                        <span class="code-icon">CSS</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="projet-item">
                     <h3>DoMiSi'l</h3>
@@ -196,5 +284,7 @@
             <p>&copy; 2025 Elouan Chacornac. Tous droits réservés.</p>
         </div>
     </footer>
+    <script src="competences.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>
