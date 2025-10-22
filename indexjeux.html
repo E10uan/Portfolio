@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mustabuntu Game</title>
+    <link rel="stylesheet" href="jeustyle.css">
+</head>
+<body>
+    <h1>Le Meilleur Jeu du Monde</h1>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="1600" height="400" tabindex="0"></canvas>
+        <div id="instructions-nav">
+            <div id="instructions" style="display:inline-block;">
+                <p>
+                    Utilise les flèches <b>gauche/droite</b> pour te déplacer, flèche du <b>haut</b> pour sauter.
+                </p>
+            </div>
+            <div id="nav-arrows" style="display:inline-flex; vertical-align:middle; margin-left:18px;">
+                <button id="level-prev" class="nav-arrow" disabled><span class="nav-arrow-inner">&lt;</span></button>
+                <button id="level-next" class="nav-arrow"><span class="nav-arrow-inner">&gt;</span></button>
+            </div>
+        </div>
+        <div id="game-message"></div>
+    </div>
+    <div id="home-overlay" style="display:none;">
+        <div id="home-title">Le Meilleur Jeu du Monde</div>
+        <button class="home-btn">Nouvelle partie</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
